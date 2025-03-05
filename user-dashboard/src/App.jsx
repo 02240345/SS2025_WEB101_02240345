@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState } from 'react';
 import Header from './Header';
 import ProfileCard from './ProfileCard';
@@ -7,16 +6,16 @@ import StatsDashboard from './StatsDashboard';
 import './App.css';
 
 function App() {
-  // State for user data
+  // State to manage user data
   const [userData, setUserData] = useState({
-    name: "Karma Tashi",
-    bio: "Web Developer",
-    avatar: "profile.jpg",
-    age: 25,
-    location: "New York"
+    name: "Karma Choing Zangmo",
+    bio: "Software Student",
+    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIIMKSzmSftPMbZXB2Sd_VL6dXl1LiGLTIzA&s",
+    location: "Phuentsholing, Bhutan",
+    email: "02240345.cst@rub.edu.bt"
   });
 
-  // State to track if edit mode is active
+  // State to manage edit mode
   const [isEditing, setIsEditing] = useState(false);
 
   // Function to update user data

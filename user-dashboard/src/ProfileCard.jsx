@@ -1,4 +1,3 @@
-// ProfileCard.jsx
 import React from 'react';
 
 function ProfileCard({ user, onEdit }) {
@@ -7,8 +6,8 @@ function ProfileCard({ user, onEdit }) {
       <img src={user.avatar} alt="Profile" />
       <h2>{user.name}</h2>
       <p>{user.bio}</p>
-      <p>Age: {user.age}</p>
-      <p>Location: {user.location}</p>
+      <p><strong>Location:</strong> {user.location}</p>
+      <p><strong>Email:</strong> {user.email}</p>
       <button onClick={onEdit}>Edit Profile</button>
     </div>
   );
